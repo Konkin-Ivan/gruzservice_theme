@@ -1,0 +1,8 @@
+global-css:
+  version: VERSION
+  css:
+   base:
+    public/css/styles.css: {}
+global-js:
+  js:
+    public/js/scripts.js: {}

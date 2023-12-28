@@ -1,0 +1,103 @@
+.all-services .views-row {
+    position: relative;
+    color: var(--white);
+    background-color: var(--color-title);
+    border-radius: 6px;
+    box-shadow: 0 21px 35px var(--shadow-bright);
+    margin-bottom: 20px;
+    max-width: 517px;
+  }
+  .all-services .views-row:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-image: linear-gradient(
+    -30deg, var(--theme-bright-bg) 0%, rgba(255, 255, 255, 0) 100%);
+    opacity: 0.25;
+    transition: opacity 1s;
+  }
+  .all-services .views-row:hover::after {
+    opacity: 0;
+  }
+  .all-services h2 {
+    position: absolute;
+    top: 10px;
+    color: var(--white);
+    padding: 0 15px;
+  }
+  .all-services a {
+    color: var(--white);
+    text-decoration: none;
+    z-index: 1;
+    position: relative;
+  }
+  .all-services img {
+    opacity: 0.3;
+    width: 100%;
+  }
+  .all-services .description {
+    position: absolute;
+    top: 70px;
+    padding: 0 15px;
+  }
+  .views-button {
+    padding: 0 15px;
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+  }
+  .min-time {
+    padding: 0 15px;
+    right: 90px;
+    bottom: 30px;
+    position: absolute;
+  }
+  .min-time:before {
+    content: '';
+    background: url(../images/icons/time.svg) no-repeat;
+    width: 15px;
+    height: 15px;
+    left: -4px;
+    top: 2px;
+    position: absolute;
+  }
+  .views-price {
+    position: absolute;
+    bottom: 30px;
+    right: 15px;
+  }
+  .views-price:before {
+    content: '';
+    background: url(../images/icons/price.svg) no-repeat;
+    width: 20px;
+    height: 20px;
+    left: -24px;
+    top: -2px;
+    position: absolute;
+    background-size: cover;
+  }
+  .views-button a {
+    padding: 12px;
+    border-radius: 6px;
+    border: 2px solid var(--theme-bright-bg);
+    transition: box-shadow 1s, background-color 1s, border-color 1s;
+    text-decoration: none;
+    box-shadow: 0 21px 35px var(--shadow-bright);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+  }
+  .views-button a:after {
+    display: inline-block;
+    content: '';
+    width: 14px;
+    height: 10px;
+    margin-left: 22px;
+    background-image: url('../images/icons/arrow-pointing-to-right.svg');
+  }
+  .container {
+    padding: 0 20px;
+  }

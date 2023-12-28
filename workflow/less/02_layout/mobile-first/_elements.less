@@ -1,0 +1,109 @@
+/**
+ * Form
+ */
+form {
+  padding-bottom: 60px;
+}
+form label {
+  color: var(--textarea-bg);
+  font-family: 'Circe Regular';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  display: block;
+  position: relative;
+  padding-left: 20px;
+}
+#edit-message-wrapper label {
+  padding: 0;
+}
+#edit-name label:before, .js-form-item-name label:before {
+  content: '';
+  width: 15px;
+  height: 15px;
+  background: url(../images/icons/name-yellow.svg) no-repeat;
+  position: absolute;
+  left: 0px;
+  top: 5px;
+}
+#edit-mail label:before, .js-form-item-mail label:before {
+  content: '';
+  width: 15px;
+  height: 15px;
+  background: url(../images/icons/emai-yellow.svg) no-repeat;
+  position: absolute;
+  left: 0px;
+  top: 5px;
+  background-size: contain;
+}
+#edit-subject-wrapper label:before {
+  content: '';
+  width: 15px;
+  height: 15px;
+  background: url(../images/icons/organization-yellow.svg) no-repeat;
+  position: absolute;
+  left: 0px;
+  top: 5px;
+  background-size: contain;
+}
+textarea, input {
+  border: 1px solid var(--textarea-input-border);
+  border-radius: 6px;
+
+}
+input {
+  outline: 0;
+  padding: 5px;
+}
+textarea {
+  box-sizing: border-box;
+  max-width: 900px;
+  width: 100%;
+  color: var(--textarea-bg);
+  font-family: 'Circe Regular';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  box-shadow: 0 21px 35px rgb(49 53 58 / 4%);
+  border-radius: 6px;
+  background-color: var(--white);
+  outline: none;
+  padding: 16px 20px 32px;
+}
+#edit-mail, #edit-name, #edit-subject-wrapper {
+  max-width: 48%;
+  width: 100%;
+  vertical-align: top;
+}
+#edit-subject-wrapper input {
+  width: 100%;
+}
+#edit-submit, .edit-submit a {
+  padding: 19px 72px;
+  position: relative;
+  border-radius: 6px;
+  box-shadow: 0 21px 35px rgb(249 182 7 / 19%);
+  background-color: var(--theme-bright-bg);
+  color: var(--color-title);
+  font-family: 'Circe Regular';
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+  border-bottom: none;
+  transition: box-shadow 0.5s;
+}
+.edit-submit {
+  border-radius: 6px;
+  border: 1px solid var(--textarea-input-border);
+  opacity: 0.7;
+  display: inline-block;
+  padding: 15px;
+  height: 100px;
+  margin-bottom: 60px;
+}
+#edit-submit:hover {
+  box-shadow: 0 31px 45px rgb(249 182 7 / 39%);
+}
+#edit-actions {
+  padding: 20px 0;
+}

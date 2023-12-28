@@ -1,0 +1,28 @@
+name: Gruz Service
+description: 'Тема оформления Gruz Service.'
+screenshot: images/logotheme.png
+logo: logo.png
+
+# core: 8.x
+type: theme
+base theme: false
+# Information added by Drupal.org packaging script on 2016-06-02
+core_version_requirement: ^8 || ^9
+project: 'KonKin'
+
+libraries:
+  - gruzservice/global-css
+  - gruzservice/global-js
+  - core/normalize
+
+regions:
+  header: 'Header'
+  breadcrumb: 'Breadcrumb'
+  highlighted: 'Highlighted'
+  help: 'Help'
+  title: 'Page Title'
+  content: 'Content'
+  aside: 'Aside'
+  menu: 'Menu'
+  footer: 'Footer'
+  bottom: 'Bottom'
